@@ -30,7 +30,8 @@ export class driver {
    }
    this.browser = await tipoNavegador.launch({
        channel: channel,
-       headless: false
+       headless: true,
+       args: ["--headless=new"]
    });
    const context = await this.browser.newContext({
        viewport: {
