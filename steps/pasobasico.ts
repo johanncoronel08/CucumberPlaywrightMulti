@@ -12,7 +12,7 @@ driver.page.goto(url,{waitUntil:"load",timeout:90000})
 
 When('Valido que estoy en la URL correcta {string}',{timeout:90000}, async (urlcreada) => {
     await expect(driver.page).toHaveURL(urlcreada)
-    await driver.page.waitForTimeout(60000)
+    await driver.page.waitForTimeout(5000)
 })
 
 When('hago click en Documentacion', {timeout:50000},async () => {
@@ -23,17 +23,17 @@ When('hago click en Documentacion', {timeout:50000},async () => {
 
 Then('Valido que estoy en documentacion',{timeout:50000},async () => {
   await expect(paginaConetor.intro).toBeVisible()
-  await driver.page.waitForTimeout(50000)
+  await driver.page.waitForTimeout(3000)
 })
 
 When('hago click en guides',{timeout:50000}, async () => {
   await paginaConetor.guides.click()
-  await driver.page.waitForTimeout(50000)
+  await driver.page.waitForTimeout(3000)
 })
 
 Then('Valido que estoy en guides',{timeout:50000}, async() => {
   await expect(driver.page).toHaveURL("https://www.whatismybrowser.com/guides/")
-  await driver.page.waitForTimeout(50000)
+  await driver.page.waitForTimeout(3000)
 })
 
 
