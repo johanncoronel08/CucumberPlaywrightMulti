@@ -33,13 +33,13 @@ export class driver {
        headless: true,
        args: ["--headless=new"]
    });
-   const context = await this.browser.newContext({
+   /*const context = await this.browser.newContext({
        viewport: {
          width: 1920, // Ancho deseado
          height: 1080, // Altura deseada
        },
-     });
-   this.page = await context.newPage();
+     });*/
+   this.page = await this.browser.newPage();
 }
 
 
