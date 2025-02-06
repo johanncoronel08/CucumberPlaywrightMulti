@@ -1,0 +1,17 @@
+{
+  "name": "demo-js",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^11.1.1",
+    "@playwright/test": "^1.49.1",
+    "esbuild-register": "^3.6.0",
+    "typescript": "^5.7.2"
+  }
+}
